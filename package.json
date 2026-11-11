@@ -1,0 +1,48 @@
+{
+  "name": "dsh-plugin-proxy-toggle",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "DeepSeek Harness Desktop plugin: switch outbound traffic between the startup policy and a local HTTP proxy, with a Google 204 connectivity check.",
+  "license": "MIT",
+  "author": "WosLovesLife",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WosLovesLife/dsh-plugin-proxy-toggle.git"
+  },
+  "homepage": "https://github.com/WosLovesLife/dsh-plugin-proxy-toggle#readme",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "proxy",
+    "clash",
+    "http-proxy",
+    "electron"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "locale/*.json",
+    "icon.svg",
+    "docs/*.png"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}

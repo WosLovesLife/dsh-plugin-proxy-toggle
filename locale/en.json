@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Network proxy",
+    "description": "Switch Harness outbound traffic to a local HTTP proxy from the sidebar, with an exit check and a read-only system-layer hint."
+  }
+}

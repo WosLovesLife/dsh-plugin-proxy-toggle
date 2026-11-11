@@ -1,0 +1,6 @@
+- insert:
+    - id: proxy-toggle
+      name: 'dsh-plugin-proxy-toggle'
+      config:
+        enabled: false
+        proxyUrl: 'http://127.0.0.1:7897'
